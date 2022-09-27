@@ -1,0 +1,239 @@
+public class FourteGame {
+
+	public static void main(String[] args) {
+		int target=6;
+		int a=4,b=5,c=8,d=1;
+		if(!(find(a,b,c,d,target).equals(""))) {System.out.println(find(a,b,c,d,target));return;}
+		if(!(find(a,b,d,c,target).equals(""))) {System.out.println(find(a,b,d,c,target));return;}
+		if(!(find(a,d,c,b,target).equals(""))) {System.out.println(find(a,d,c,b,target));return;}
+		if(!(find(a,d,b,c,target).equals(""))) {System.out.println(find(a,d,b,c,target));return;}
+		if(!(find(a,c,b,d,target).equals(""))) {System.out.println(find(a,c,b,d,target));return;}
+		if(!(find(a,c,d,b,target).equals(""))) {System.out.println(find(a,c,d,b,target));return;}
+		
+		if(!(find(b,a,c,d,target).equals(""))) {System.out.println(find(b,a,c,d,target));return;}
+		if(!(find(b,a,d,c,target).equals(""))) {System.out.println(find(b,a,d,c,target));return;}
+		if(!(find(b,c,a,d,target).equals(""))) {System.out.println(find(b,c,a,d,target));return;}
+		if(!(find(b,c,d,a,target).equals(""))) {System.out.println(find(b,c,d,a,target));return;}
+		if(!(find(b,d,a,c,target).equals(""))) {System.out.println(find(b,d,a,c,target));return;}
+		if(!(find(b,d,c,a,target).equals(""))) {System.out.println(find(b,d,c,a,target));return;}
+		
+		if(!(find(c,b,a,d,target).equals(""))) {System.out.println(find(c,b,a,d,target));return;}
+		if(!(find(c,b,d,a,target).equals(""))) {System.out.println(find(c,b,d,a,target));return;}
+		if(!(find(c,d,a,b,target).equals(""))) {System.out.println(find(c,d,a,b,target));return;}
+		if(!(find(c,d,b,a,target).equals(""))) {System.out.println(find(c,d,b,a,target));return;}
+		if(!(find(c,a,b,d,target).equals(""))) {System.out.println(find(c,a,b,d,target));return;}
+		if(!(find(c,a,d,b,target).equals(""))) {System.out.println(find(c,a,d,b,target));return;}
+		
+		if(!(find(d,a,c,b,target).equals(""))) {System.out.println(find(d,a,c,b,target));return;}
+		if(!(find(d,a,b,c,target).equals(""))) {System.out.println(find(d,a,b,c,target));return;}
+		if(!(find(d,b,c,a,target).equals(""))) {System.out.println(find(d,b,c,a,target));return;}
+		if(!(find(d,b,a,c,target).equals(""))) {System.out.println(find(d,b,a,c,target));return;}
+		if(!(find(d,c,b,a,target).equals(""))) {System.out.println(find(d,c,b,a,target));return;}
+		if(!(find(d,c,a,b,target).equals(""))) {System.out.println(find(d,c,a,b,target));return;}
+		
+		int k=(a*10)+b;
+		
+		if(!(find(k,d,c,target).equals(""))) {System.out.println(find(k,d,c,target));return;}
+		if(!(find(k,c,d,target).equals(""))) {System.out.println(find(k,c,d,target));return;}
+		if(!(find(c,k,d,target).equals(""))) {System.out.println(find(c,k,d,target));return;}
+		if(!(find(c,d,k,target).equals(""))) {System.out.println(find(c,d,k,target));return;}
+		if(!(find(d,c,k,target).equals(""))) {System.out.println(find(d,c,k,target));return;}
+		if(!(find(d,k,c,target).equals(""))) {System.out.println(find(d,k,c,target));return;}
+		
+		
+		k=(a*10)+c;
+		if(!(find(k,d,b,target).equals(""))) {System.out.println(find(k,d,b,target));return;}
+		if(!(find(k,b,d,target).equals(""))) {System.out.println(find(k,b,d,target));return;}
+		if(!(find(b,d,k,target).equals(""))) {System.out.println(find(b,d,k,target));return;}
+		if(!(find(d,b,k,target).equals(""))) {System.out.println(find(d,b,k,target));return;}
+		if(!(find(b,k,d,target).equals(""))) {System.out.println(find(b,k,d,target));return;}
+		if(!(find(d,k,b,target).equals(""))) {System.out.println(find(d,k,b,target));return;}
+		
+		k=(a*10)+d;
+		if(!(find(k,b,c,target).equals(""))) {System.out.println(find(k,b,c,target));return;}
+		if(!(find(k,c,b,target).equals(""))) {System.out.println(find(k,c,b,target));return;}
+		if(!(find(b,c,k,target).equals(""))) {System.out.println(find(b,c,k,target));return;}
+		if(!(find(c,b,k,target).equals(""))) {System.out.println(find(c,b,k,target));return;}
+		if(!(find(b,k,c,target).equals(""))) {System.out.println(find(b,k,c,target));return;}
+		if(!(find(c,k,b,target).equals(""))) {System.out.println(find(c,k,b,target));return;}
+		
+		
+        k=(b*10)+a;
+		
+		if(!(find(k,d,c,target).equals(""))) {System.out.println(find(k,d,c,target));return;}
+		if(!(find(k,c,d,target).equals(""))) {System.out.println(find(k,c,d,target));return;}
+		if(!(find(c,d,k,target).equals(""))) {System.out.println(find(c,d,k,target));return;}
+		if(!(find(d,c,k,target).equals(""))) {System.out.println(find(d,c,k,target));return;}
+		if(!(find(c,k,d,target).equals(""))) {System.out.println(find(c,k,d,target));return;}
+		if(!(find(d,k,c,target).equals(""))) {System.out.println(find(d,k,c,target));return;}
+		
+		k=(b*10)+c;
+		if(!(find(k,a,d,target).equals(""))) {System.out.println(find(k,a,d,target));return;}
+		if(!(find(k,d,a,target).equals(""))) {System.out.println(find(k,d,a,target));return;}
+		if(!(find(a,d,k,target).equals(""))) {System.out.println(find(a,d,k,target));return;}
+		if(!(find(d,a,k,target).equals(""))) {System.out.println(find(d,a,k,target));return;}
+		if(!(find(a,k,d,target).equals(""))) {System.out.println(find(a,k,d,target));return;}
+		if(!(find(d,k,a,target).equals(""))) {System.out.println(find(d,k,a,target));return;}
+		
+		k=(b*10)+d;
+		if(!(find(k,a,c,target).equals(""))) {System.out.println(find(k,a,c,target));return;}
+		if(!(find(k,c,a,target).equals(""))) {System.out.println(find(k,c,a,target));return;}
+		if(!(find(a,c,k,target).equals(""))) {System.out.println(find(a,c,k,target));return;}
+		if(!(find(c,a,k,target).equals(""))) {System.out.println(find(c,a,k,target));return;}
+		if(!(find(a,k,c,target).equals(""))) {System.out.println(find(a,k,c,target));return;}
+		if(!(find(c,k,a,target).equals(""))) {System.out.println(find(c,k,a,target));return;}
+		
+		
+        k=(c*10)+a;
+		
+		if(!(find(k,d,b,target).equals(""))) {System.out.println(find(k,d,b,target));return;}
+		if(!(find(k,b,d,target).equals(""))) {System.out.println(find(k,b,d,target));return;}
+		if(!(find(b,d,k,target).equals(""))) {System.out.println(find(b,d,k,target));return;}
+		if(!(find(d,b,k,target).equals(""))) {System.out.println(find(d,b,k,target));return;}
+		if(!(find(b,k,d,target).equals(""))) {System.out.println(find(b,k,d,target));return;}
+		if(!(find(d,k,b,target).equals(""))) {System.out.println(find(d,k,b,target));return;}
+		
+		k=(c*10)+b;
+		if(!(find(k,a,d,target).equals(""))) {System.out.println(find(k,a,d,target));return;}
+		if(!(find(k,d,a,target).equals(""))) {System.out.println(find(k,d,a,target));return;}
+		if(!(find(a,d,k,target).equals(""))) {System.out.println(find(a,d,k,target));return;}
+		if(!(find(d,a,k,target).equals(""))) {System.out.println(find(d,a,k,target));return;}
+		if(!(find(a,k,d,target).equals(""))) {System.out.println(find(a,k,d,target));return;}
+		if(!(find(d,k,a,target).equals(""))) {System.out.println(find(d,k,a,target));return;}
+		
+		k=(c*10)+d;
+		if(!(find(k,b,a,target).equals(""))) {System.out.println(find(k,b,a,target));return;}
+		if(!(find(k,a,b,target).equals(""))) {System.out.println(find(k,a,b,target));return;}
+		if(!(find(a,b,k,target).equals(""))) {System.out.println(find(a,b,k,target));return;}
+		if(!(find(b,a,k,target).equals(""))) {System.out.println(find(b,a,k,target));return;}
+		if(!(find(a,k,b,target).equals(""))) {System.out.println(find(a,k,b,target));return;}
+		if(!(find(b,k,a,target).equals(""))) {System.out.println(find(b,k,a,target));return;}
+		
+		
+		
+        k=(d*10)+a;
+		
+		if(!(find(k,b,c,target).equals(""))) {System.out.println(find(k,b,c,target));return;}
+		if(!(find(k,c,b,target).equals(""))) {System.out.println(find(k,c,b,target));return;}
+		if(!(find(b,c,k,target).equals(""))) {System.out.println(find(b,c,k,target));return;}
+		if(!(find(c,b,k,target).equals(""))) {System.out.println(find(c,b,k,target));return;}
+		if(!(find(b,k,c,target).equals(""))) {System.out.println(find(b,k,c,target));return;}
+		if(!(find(c,k,b,target).equals(""))) {System.out.println(find(c,k,b,target));return;}
+		
+		k=(d*10)+b;
+		if(!(find(k,a,c,target).equals(""))) {System.out.println(find(k,a,c,target));return;}
+		if(!(find(k,c,a,target).equals(""))) {System.out.println(find(k,c,a,target));return;}
+		if(!(find(a,c,k,target).equals(""))) {System.out.println(find(a,c,k,target));return;}
+		if(!(find(c,a,k,target).equals(""))) {System.out.println(find(c,a,k,target));return;}
+		if(!(find(a,k,c,target).equals(""))) {System.out.println(find(a,k,c,target));return;}
+		if(!(find(c,k,a,target).equals(""))) {System.out.println(find(c,k,a,target));return;}
+		
+		k=(d*10)+c;
+		if(!(find(k,b,a,target).equals(""))) {System.out.println(find(k,b,a,target));return;}
+		if(!(find(k,a,b,target).equals(""))) {System.out.println(find(k,a,b,target));return;}
+		if(!(find(a,b,k,target).equals(""))) {System.out.println(find(a,b,k,target));return;}
+		if(!(find(b,a,k,target).equals(""))) {System.out.println(find(b,a,k,target));return;}
+		if(!(find(a,k,b,target).equals(""))) {System.out.println(find(a,k,b,target));return;}
+		if(!(find(b,k,a,target).equals(""))) {System.out.println(find(b,k,a,target));return;}
+	}
+	private static String find(int a,int b,int c,int d ,int target) {
+		if((a+b+c+d)==target)
+			if((a+b+c+d)==target)return a+"+"+b+"+"+c+"+"+d;
+		    if((a+b+c-d)==target)return a+"+"+b+"+"+c+"-"+d;
+			if((a+b+c/d)==target)return a+"+"+b+"+"+c+"/"+d;
+			if((a+b+c*d)==target)return a+"+"+b+"+"+c+"*"+d;
+			if((a+b-c+d)==target)return a+"+"+b+"-"+c+"+"+d;
+			if((a+b-c-d)==target)return a+"+"+b+"-"+c+"-"+d;
+			if((a+b-c/d)==target)return a+"+"+b+"-"+c+"/"+d;
+			if((a+b-c*d)==target)return a+"+"+b+"-"+c+"*"+d;
+			if((a+b/c+d)==target)return a+"+"+b+"/"+c+"+"+d;
+			if((a+b/c-d)==target)return a+"+"+b+"/"+c+"-"+d;
+			if((a+b/c/d)==target)return a+"+"+b+"/"+c+"/"+d;
+			if((a+b/c*d)==target)return a+"+"+b+"/"+c+"*"+d;
+			if((a+b*c+d)==target)return a+"+"+b+"*"+c+"+"+d;
+			if((a+b*c-d)==target)return a+"+"+b+"*"+c+"-"+d;
+			if((a+b*c/d)==target)return a+"+"+b+"*"+c+"/"+d;
+			if((a+b*c*d)==target)return a+"+"+b+"*"+c+"*"+d;
+			
+			if((a-b+c+d)==target)return a+"-"+b+"+"+c+"+"+d;
+		    if((a-b+c-d)==target)return a+"-"+b+"+"+c+"-"+d;
+			if((a-b+c/d)==target)return a+"-"+b+"+"+c+"/"+d;
+			if((a-b+c*d)==target)return a+"-"+b+"+"+c+"*"+d;
+			if((a-b-c+d)==target)return a+"-"+b+"-"+c+"+"+d;
+			if((a-b-c-d)==target)return a+"-"+b+"-"+c+"-"+d;
+			if((a-b-c/d)==target)return a+"-"+b+"-"+c+"/"+d;
+			if((a-b-c*d)==target)return a+"-"+b+"-"+c+"*"+d;
+			if((a-b/c+d)==target)return a+"-"+b+"/"+c+"+"+d;
+			if((a-b/c-d)==target)return a+"-"+b+"/"+c+"-"+d;
+			if((a-b/c/d)==target)return a+"-"+b+"/"+c+"/"+d;
+			if((a-b/c*d)==target)return a+"-"+b+"/"+c+"*"+d;
+			if((a-b*c+d)==target)return a+"-"+b+"*"+c+"+"+d;
+			if((a-b*c-d)==target)return a+"-"+b+"*"+c+"-"+d;
+			if((a-b*c/d)==target)return a+"-"+b+"*"+c+"/"+d;
+			if((a-b*c*d)==target)return a+"-"+b+"*"+c+"*"+d;
+			
+			if((a/b+c+d)==target)return a+"/"+b+"+"+c+"+"+d;
+		    if((a/b+c-d)==target)return a+"/"+b+"+"+c+"-"+d;
+			if((a/b+c/d)==target)return a+"/"+b+"+"+c+"/"+d;
+			if((a/b+c*d)==target)return a+"/"+b+"+"+c+"*"+d;
+			if((a/b-c+d)==target)return a+"/"+b+"-"+c+"+"+d;
+			if((a/b-c-d)==target)return a+"/"+b+"-"+c+"-"+d;
+			if((a/b-c/d)==target)return a+"/"+b+"-"+c+"/"+d;
+			if((a/b-c*d)==target)return a+"/"+b+"-"+c+"*"+d;
+			if((a/b/c+d)==target)return a+"/"+b+"/"+c+"+"+d;
+			if((a/b/c-d)==target)return a+"/"+b+"/"+c+"-"+d;
+			if((a/b/c/d)==target)return a+"/"+b+"/"+c+"/"+d;
+			if((a/b/c*d)==target)return a+"/"+b+"/"+c+"*"+d;
+			if((a/b*c+d)==target)return a+"/"+b+"*"+c+"+"+d;
+			if((a/b*c-d)==target)return a+"/"+b+"*"+c+"-"+d;
+			if((a/b*c/d)==target)return a+"/"+b+"*"+c+"/"+d;
+			if((a/b*c*d)==target)return a+"/"+b+"*"+c+"*"+d;
+			
+			if((a*b+c+d)==target)return a+"*"+b+"+"+c+"+"+d;
+		    if((a*b+c-d)==target)return a+"*"+b+"+"+c+"-"+d;
+			if((a*b+c/d)==target)return a+"*"+b+"+"+c+"/"+d;
+			if((a*b+c*d)==target)return a+"*"+b+"+"+c+"*"+d;
+			if((a*b-c+d)==target)return a+"*"+b+"-"+c+"+"+d;
+			if((a*b-c-d)==target)return a+"*"+b+"-"+c+"-"+d;
+			if((a*b-c/d)==target)return a+"*"+b+"-"+c+"/"+d;
+			if((a*b-c*d)==target)return a+"*"+b+"-"+c+"*"+d;
+			if((a*b/c+d)==target)return a+"*"+b+"/"+c+"+"+d;
+			if((a*b/c-d)==target)return a+"*"+b+"/"+c+"-"+d;
+			if((a*b/c/d)==target)return a+"*"+b+"/"+c+"/"+d;
+			if((a*b/c*d)==target)return a+"*"+b+"/"+c+"*"+d;
+			if((a*b*c+d)==target)return a+"*"+b+"*"+c+"+"+d;
+			if((a*b*c-d)==target)return a+"*"+b+"*"+c+"-"+d;
+			if((a*b*c/d)==target)return a+"*"+b+"*"+c+"/"+d;
+			if((a*b*c*d)==target)return a+"*"+b+"*"+c+"*"+d;
+			
+			
+			
+			return "";
+	
+	}
+	private static String find(int a,int b,int c,int target) {
+		
+		if((a+b+c)==target)return a+"+"+b+"+"+c; 
+		if((a+b-c)==target)return a+"+"+b+"-"+c; 
+		if((a+b/c)==target)return a+"+"+b+"/"+c; 
+		if((a+b*c)==target)return a+"+"+b+"*"+c; 
+		
+		if((a-b+c)==target)return a+"-"+b+"+"+c; 
+		if((a-b-c)==target)return a+"-"+b+"-"+c; 
+		if((a-b/c)==target)return a+"-"+b+"/"+c; 
+		if((a-b*c)==target)return a+"-"+b+"*"+c; 
+		
+		if((a/b+c)==target)return a+"/"+b+"+"+c; 
+		if((a/b-c)==target)return a+"/"+b+"-"+c; 
+		if((a/b/c)==target)return a+"/"+b+"/"+c; 
+		if((a/b*c)==target)return a+"/"+b+"*"+c; 
+		
+		if((a*b+c)==target)return a+"*"+b+"+"+c; 
+		if((a*b-c)==target)return a+"*"+b+"-"+c; 
+		if((a*b/c)==target)return a+"*"+b+"/"+c; 
+		if((a*b*c)==target)return a+"*"+b+"*"+c; 
+		
+		return "";
+	}
+
+}
